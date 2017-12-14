@@ -182,8 +182,8 @@
 
 \newfontfamily\bodyfontlight[
 Path=\@fontdir,
-UprightFont=*-Light,
-ItalicFont=*-LightItalic,
+UprightFont=*-Regular,
+ItalicFont=*-Italic,
 BoldFont=*-Medium,
 BoldItalicFont=*-MediumItalic,
 ]{Roboto}

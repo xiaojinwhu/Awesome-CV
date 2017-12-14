@@ -3,7 +3,7 @@
  % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
  
  \moderncvstyle[left,shortrules]{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
- \moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+ \moderncvcolor{orange}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
  \usepackage[details,left]{moderncvheadi}
  \usepackage[top=1.5cm,bottom=1.2cm,left=2cm,right=2cm]{geometry}
  %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -12,6 +12,12 @@
  \usepackage{xeCJK}
  \usepackage{fontspec}
  \usepackage{fontawesome}
+ 
+ 
+  \usepackage{color}
+ \definecolor{darkgray}{HTML}{333333}
+
+
  
 % \setCJKmainfont{Hiragino Sans GB}
 % \setmainfont{Hiragino Sans GB}
@@ -31,41 +37,46 @@
  \begin{document}
  
  \makecvtitle
+ 
+  \section{个人简介}
+  国内知名高校教育背景，以第一作者身份发表过SCI论文，一年信息系统产品经验， 数据 ETL工程师，Python使用者。热衷学习，搭建过个人博客，VPS。获得Udacity深度学习基石纳米学位，正在Coursera上学习机器学习课程。
+  
  \section{教育背景}
-  \cventry{2013--2016}{理学硕士}{复旦大学}{生物化学与分子生物学专业}{}{
+
+  \cventry{}{}{复旦大学}{生物化学与分子生物学专业}{}{
   	\begin{itemize}
-  		\item 主修课程：现代组织化学，基因生理学，\textbf{医学信息检索与利用}等课程。
+  		\item 1
   	\end{itemize}
   	}
   \cventry{2008--2013}{医学学士}{武汉大学}{医学检验专业}{}{
   	\begin{itemize}
-  		\item 主修课程：\textbf{医学统计学}，病理学，生理学，病理生理学，临床生物化学与检验，临床免疫学与检验，诊断学，内外妇儿科学等临床医学与医学检验课程。
+  		\item 主修课程：
   	\end{itemize}
   }
    
- \section{实习实践}
- \cventry{2015--2016}{主要参与人}{肿瘤糖生物学}{}{}{
- 	 \begin{itemize}
- 	 	\item 熟练掌握Real-time PCR，Western Blot，细胞培养，质粒转染，流式细胞术，免疫组织（细胞）化学，免疫荧光等实验技术。
- 	 	\item 掌握激光共聚焦显微镜拍摄技术（Leica SP5），\textbf{信息检索}等。对\textbf{ImageJ}的使用熟练。熟练掌握使用\textbf{Graphpad}科研作图，Photoshop组图等。
- 	 \end{itemize} 	
- 	}
- \cventry{2013--2014}{参与人}{ADAMTS13与脑出血}{}{}{
- 	\begin{itemize}
- 		\item 掌握动物实验造模，给药，取材，行为学等动物实验技术，独立开展Real-time PCR实验。
- 	\end{itemize}
- 	}
- \cventry{2011--2013}{实习生}{武汉大学附属中南医院（三级甲等）}{}{}{
- 	\begin{itemize}
- 		\item 轮转普外科，血液科，心内科等\textbf{临床科室}，了解临床科室运行流程。
- 		\item 轮转检验科各专业组，掌握基本的检验仪器的使用，熟悉检验科日常流程。
- 	\end{itemize}
- 	}
- \cventry{2010--2012}{参与人}{武汉大学大学生创新实验项目}{}{}{
- 	\begin{itemize}
- 		\item 培养科学素质，掌握细胞培养等实验技术。
- 	\end{itemize} 	
- 	}
+% \section{实习实践}
+% \cventry{2015--2016}{主要参与人}{肿瘤糖生物学}{}{}{
+% 	 \begin{itemize}
+% 	 	\item 熟练掌握Real-time PCR，Western Blot，细胞培养，质粒转染，流式细胞术，免疫组织（细胞）化学，免疫荧光等实验技术。
+% 	 	\item 掌握激光共聚焦显微镜拍摄技术（Leica SP5），\textbf{信息检索}等。对\textbf{ImageJ}的使用熟练。熟练掌握使用\textbf{Graphpad}科研作图，Photoshop组图等。
+% 	 \end{itemize} 	
+% 	}
+% \cventry{2013--2014}{参与人}{ADAMTS13与脑出血}{}{}{
+% 	\begin{itemize}
+% 		\item 掌握动物实验造模，给药，取材，行为学等动物实验技术，独立开展Real-time PCR实验。
+% 	\end{itemize}
+% 	}
+% \cventry{2011--2013}{实习生}{武汉大学附属中南医院（三级甲等）}{}{}{
+% 	\begin{itemize}
+% 		\item 轮转普外科，血液科，心内科等\textbf{临床科室}，了解临床科室运行流程。
+% 		\item 轮转检验科各专业组，掌握基本的检验仪器的使用，熟悉检验科日常流程。
+% 	\end{itemize}
+% 	}
+% \cventry{2010--2012}{参与人}{武汉大学大学生创新实验项目}{}{}{
+% 	\begin{itemize}
+% 		\item 培养科学素质，掌握细胞培养等实验技术。
+% 	\end{itemize} 	
+% 	}
 
  \section{专业技能}
  \cvdoubleitem{Office}{熟练}{Photoshop}{熟练}
