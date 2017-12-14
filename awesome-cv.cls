@@ -76,6 +76,7 @@
 % (https://github.com/posquit0/latex-fontawesome)
 \RequirePackage{fontawesome}
 \RequirePackage[default,opentype]{sourcesanspro}
+\RequirePackage[sfdefault]{roboto}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
@@ -179,9 +180,19 @@
   BoldItalicFont=*-MediumItalic,
 ]{Roboto}
 
+\newfontfamily\bodyfontlight[
+Path=\@fontdir,
+UprightFont=*-Light,
+ItalicFont=*-LightItalic,
+BoldFont=*-Medium,
+BoldItalicFont=*-MediumItalic,
+]{Roboto}
+
+
 \newcommand*{\footerfont}{\sourcesanspro}
-\newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newcommand*{\bodyfont}{\roboto}
+%\newcommand*{\bodyfontlight}{\sourcesansprolight}
+%\newcommand*{\bodyfontlight}{\roboto}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
