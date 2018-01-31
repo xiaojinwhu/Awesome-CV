@@ -3,7 +3,7 @@
  % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
  
  \moderncvstyle[left,shortrules]{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
- \moderncvcolor{orange}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+ \moderncvcolor{green}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
  \usepackage[details,left]{moderncvheadi}
  \usepackage[top=1.5cm,bottom=1.2cm,left=2cm,right=2cm]{geometry}
  %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -26,33 +26,63 @@
  
  \name{肖劲}{}
  \title{ }
- %\photo[64pt][0.5pt]{picture} 
+ \photo[64pt][0.5pt]{picture} 
  \phone[mobile]{170-9183-3201}
  \email{xiaojinwhu0@gmail.com}
  %\extrainfo{\faicon{bookmark-o} 湖南省张家界市|中共党员}
  %\homepage{xiaojin.online}
  \address{\faicon{map-marker} 上海市徐汇区}{\faicon{graduation-cap} 复旦大学硕士}
- \quote{求职意向：医学信息分析师}
+ \quote{求职意向：数据/深度学习相关职位}
  
  \begin{document}
  
  \makecvtitle
  
   \section{个人简介}
-  国内知名高校教育背景，以第一作者身份发表过SCI论文，一年信息系统产品经验， 数据 ETL工程师，Python使用者。热衷学习，搭建过个人博客，VPS。获得Udacity深度学习基石纳米学位，正在Coursera上学习机器学习课程。
+ 知名高校医学和生物学背景，以第一作者发表过SCI论文，一年产品经验，熟悉Python，爬虫，熟悉数据ETL，了解机器学习及自然语言处理基本方法。热爱学习并能快速学习，涉猎广泛，搭建过个人博客。在Udacity上完成深度学习基石的学习。
   
  \section{教育背景}
 
-  \cventry{}{}{复旦大学}{生物化学与分子生物学专业}{}{
+  \cventry{2013-2016}{理学硕士}{复旦大学}{生物化学与分子生物学专业}{}{
   	\begin{itemize}
-  		\item 1
+  		\item 良好的科研背景和英文论文阅读能力
   	\end{itemize}
   	}
   \cventry{2008--2013}{医学学士}{武汉大学}{医学检验专业}{}{
   	\begin{itemize}
-  		\item 主修课程：
+  		\item 高等数学，医学统计学
   	\end{itemize}
   }
+
+\section{项目经验}
+ \cventry{2016--至今}{产品经理\& Python工程师}{思路迪医疗科技有限公司}{}{}{
+ 	 \begin{itemize}
+ 	 	\item \textbf{文献自动查询系统Python开发及文本分析}
+ 	 	\begin{itemize}
+ 	 		\item 使用Python基于Requests，BeautifulSoup，Selenium 等爬取Google Scholar， NCBI网站。使用异步IO（asyncio）实现批量PDF文件下载，大幅提高下载效率，下载文献2千余篇。
+ 	 		\item 从头搭建生物医学文本库，并进行文本预处理形成领域内的语料库。 
+ 	 		编写词向量（Word2vec）模块，训练模型，生成词向量。 
+ 	 		\item 基于tf-idf算法（sklearn）提取文献单词权重。根据余弦相似性构建文献评分推荐系统。
+ 	 	\end{itemize}
+  	    \item \textbf{生物样本库、临床肿瘤数据采集产品设计及数据分析}
+  	\begin{itemize}
+  		\item 主导设计基于云的生物样本库管理软件，帮助公司管理样本3万多个，将样本移交借出等过程转移到线上。将旧系统（Excel）数据进行清洗产品数据库。
+  		\item 完成超过700个肿瘤数据元的定义，整理许多个临床领域字典。独立制作肿瘤数据3大产品宣传册（Indesign），初次打印超200 份，并在公司展会上派发。 
+  		\item 基于医院随访数据使用R进行数据分析及数据可视化，并做了简单的数据挖掘（Apriori关联分析，生存曲线）。
+  	\end{itemize}
+  	    \item \textbf{生产系统数据仓库ETL工程}
+  	\begin{itemize}
+  		\item 对公司旧系统数据进行清洗，整理。使用开源工具Kettle搭建公司内部生产平台数据库数据ETL工程，部署在服务器上并实现数据定时ETL。 
+  		\item 响应上级，多次完成数据整理等其他需求，提供tableau可视化意见。  	
+ 	 \end{itemize}
+\end{itemize}
+  }
+   \cventry{2017--2017}{在线学习}{Udacity深度学习基石}{}{}{
+   	\begin{itemize}
+   		\item 基于tensorflow对CIFAR-10数据集进行分类，熟悉卷积神经网络的构建，优化（均一化，池化，Dropout）等方法。
+   		\item 熟悉词嵌入，word2vec。基于LSTM构建生成电视剧剧本的RNN模型。基于seq2seq方法完成语言翻译项目。
+   	\end{itemize}
+ 	}
    
 % \section{实习实践}
 % \cventry{2015--2016}{主要参与人}{肿瘤糖生物学}{}{}{
@@ -79,23 +109,16 @@
 % 	}
 
  \section{专业技能}
- \cvdoubleitem{Office}{熟练}{Photoshop}{熟练}
- \cvdoubleitem{ImageJ}{熟练}{R初级}{一般}
- \section{所获证书}
- \cvdoubleitem{英语}{四级}{生物信息学导论与方法}{Coursera认证}{}{}
- \cvdoubleitem{优秀学生干部}{武汉大学}{硕士生学业奖学金，三等奖学金}{复旦大学}
+ \cvdoubleitem{编程语言}{Python, R}{深度学习}{tensorflow}
+ \cvdoubleitem{办公}{Office}{数据分析}{tableau}
+ 
+% \section{所获证书}
+% \cvdoubleitem{英语}{四级}{生物信息学导论与方法}{Coursera认证}{}{}
+% \cvdoubleitem{优秀学生干部}{武汉大学}{硕士生学业奖学金，三等奖学金}{复旦大学}
 
- \section{自我评价}
- \begin{itemize}
- 	\item 对数据感兴趣，完成Coursera\textbf{数据科学家的工具箱}，\textbf{R语言}和\textbf{生物信息学导论与方法课程}。
- 	\item 多次协助导师绘制论文Figure，熟练使用ImageJ，Graphpad等\textbf{科学绘图}软件。
- 	\item 曾使用Excel数据透视表完成大量繁杂的动物行为学数据统计，本科选修\textbf{Excel} VBA课程。
- 	\item 使用PPT，Illustrator，ChemDraw绘制复旦大学出版社生物化学课本第九章的插图。
- 	\item 学习能力强，有\textbf{Python，R}语言相关的基础。
-\end{itemize}
 %\cvlistdoubleitem{计算机科学}{篮球}
- \section{业余爱好}
- \cvitem{计算机科学}{初级Python使用；基于WordPress利用虚拟主机搭建个人博客；$LeTeX$排版}
- \cvitem{篮球}{本科班级篮球队主力队员}
+% \section{业余爱好}
+% \cvitem{计算机科学}{初级Python使用；基于WordPress利用虚拟主机搭建个人博客；$LeTeX$排版}
+% \cvitem{篮球}{本科班级篮球队主力队员}
  
  \end{document}
